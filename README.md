@@ -6,7 +6,7 @@ Simplest way to make http requests
 const http = new SimpleHttp();
 ```
 
-# GET request all
+### GET request all
 
 ```javascript
 http.get('https://jsonplaceholder.typicode.com/posts', function(err, posts) {
@@ -18,7 +18,7 @@ http.get('https://jsonplaceholder.typicode.com/posts', function(err, posts) {
 });
 ```
 
-# GET request single
+### GET request single
 
 ```javascript
 http.get('https://jsonplaceholder.typicode.com/posts/' + id, function(
@@ -33,7 +33,7 @@ http.get('https://jsonplaceholder.typicode.com/posts/' + id, function(
 });
 ```
 
-# POST request
+### POST request
 
 ```javascript
 const data = {
@@ -53,7 +53,7 @@ http.post('https://jsonplaceholder.typicode.com/posts', data, function(
 });
 ```
 
-# PUT request
+### PUT request
 
 ```javascript
 const data = {
@@ -73,7 +73,7 @@ http.post('https://jsonplaceholder.typicode.com/posts' + id, data, function(
 });
 ```
 
-# DELETE request
+### DELETE request
 
 ```javascript
 http.delete('https://jsonplaceholder.typicode.com/posts/' + id, function(
